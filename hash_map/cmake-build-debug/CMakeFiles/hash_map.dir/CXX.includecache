@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/karpe/Desktop/C++/hash_map/hash_map.hpp
+functional
+-
+memory
+-
+utility
+-
+type_traits
+-
+vector
+-
+
+C:/Users/karpe/Desktop/C++/hash_map/main.cpp
+iostream
+-
+hash_map.hpp
+C:/Users/karpe/Desktop/C++/hash_map/hash_map.hpp
+

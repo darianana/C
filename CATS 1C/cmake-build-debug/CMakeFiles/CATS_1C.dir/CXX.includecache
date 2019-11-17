@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/karpe/Desktop/C++/CATS 1C/main.cpp
+iostream
+-
+cstdio
+-
+cstdlib
+-
+vector
+-
+algorithm
+-
+cmath
+-
+stack
+-
+functional
+-
+set
+-
+queue
+-
+string
+-
+map
+-
+iomanip
+-
+sstream
+-
+cassert
+-
+
