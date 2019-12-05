@@ -6,19 +6,9 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/karpe/Desktop/C++/1F/main.cpp
+C:/Users/karpe/Desktop/Home Work C++/C/CATS 2A/main.cpp
 iostream
 -
-string
--
-cstdint
--
-algorithm
--
-cstdlib
--
-cstring
--
-memory
+vector
 -
 

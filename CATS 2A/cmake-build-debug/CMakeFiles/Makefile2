@@ -58,10 +58,10 @@ RM = "C:\Program Files\JetBrains\CLion 2018.3.4\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "C:\Users\karpe\Desktop\C++\CATS 2A"
+CMAKE_SOURCE_DIR = "C:\Users\karpe\Desktop\Home Work C++\C\CATS 2A"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "C:\Users\karpe\Desktop\C++\CATS 2A\cmake-build-debug"
+CMAKE_BINARY_DIR = "C:\Users\karpe\Desktop\Home Work C++\C\CATS 2A\cmake-build-debug"
 
 #=============================================================================
 # Target rules for target CMakeFiles/CATS_2A.dir
@@ -70,7 +70,7 @@ CMAKE_BINARY_DIR = "C:\Users\karpe\Desktop\C++\CATS 2A\cmake-build-debug"
 CMakeFiles/CATS_2A.dir/all:
 	$(MAKE) -f CMakeFiles\CATS_2A.dir\build.make CMakeFiles/CATS_2A.dir/depend
 	$(MAKE) -f CMakeFiles\CATS_2A.dir\build.make CMakeFiles/CATS_2A.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="C:\Users\karpe\Desktop\C++\CATS 2A\cmake-build-debug\CMakeFiles" --progress-num=1,2 "Built target CATS_2A"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="C:\Users\karpe\Desktop\Home Work C++\C\CATS 2A\cmake-build-debug\CMakeFiles" --progress-num=1,2 "Built target CATS_2A"
 .PHONY : CMakeFiles/CATS_2A.dir/all
 
 # Include target in all.
@@ -80,9 +80,9 @@ all: CMakeFiles/CATS_2A.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/CATS_2A.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\karpe\Desktop\C++\CATS 2A\cmake-build-debug\CMakeFiles" 2
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\karpe\Desktop\Home Work C++\C\CATS 2A\cmake-build-debug\CMakeFiles" 2
 	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/CATS_2A.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\karpe\Desktop\C++\CATS 2A\cmake-build-debug\CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\karpe\Desktop\Home Work C++\C\CATS 2A\cmake-build-debug\CMakeFiles" 0
 .PHONY : CMakeFiles/CATS_2A.dir/rule
 
 # Convenience name for target.

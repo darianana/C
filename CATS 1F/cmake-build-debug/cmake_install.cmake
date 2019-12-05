@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/karpe/Desktop/C++/1F
+# Install script for directory: C:/Users/karpe/Desktop/Home Work C++/C/CATS 1F
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/karpe/Desktop/C++/1F/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/karpe/Desktop/Home Work C++/C/CATS 1F/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -6,7 +6,7 @@ class PageAllocator {
     std::vector<void*> pages_;
 
 public:
-    PageAllocator(std::uint64_t page_size) : page_size_(page_size) {
+    PageAllocator(std::uint64_t page_size) : page_size_(page_size){
     }
 
     ~PageAllocator() {
@@ -25,7 +25,62 @@ public:
     }
 };
 
-#include "fixed_allocator.h"
+template<typename Tp>
+class FixedAllocator {
+    PageAllocator page_allocator_;
+
+public:
+    explicit FixedAllocator(std::uint64_t page_size) : page_allocator_(page_size * sizeof(Tp)){
+        size_page = page_size;
+        block = nullptr;
+    }
+
+    Tp* Allocate(){
+        if (block == nullptr){
+            block = static_cast<Tp*> (page_allocator_.Allocate());
+            count = 0;
+        }
+
+        if (count == size_page && state.empty()){
+            count = 0;
+            block = static_cast<Tp*> (page_allocator_.Allocate());
+        }
+
+        while (count != size_page){
+            if (!state.empty()){
+                Tp* answer = state[0];
+               // answer++;
+                count++;
+                state.erase(state.begin());
+                return answer;
+            }
+            if (state.empty()){
+                count++;
+                block++;
+                return block;
+            }
+            count++;
+            block++;
+            return block;
+        }
+        return nullptr;
+    }// возвращающая указатель на следующую свободную память
+
+    void Deallocate(Tp* p){
+        state.push_back(p);
+        count--;
+    }// добавляющая указатель обратно в пул свободной памяти
+
+    const PageAllocator& InnerAllocator() const noexcept{
+        return page_allocator_;
+    } //возвращающая неизменяемую ссылку на объект page_allocator_
+
+private:
+    std::uint64_t size_page;
+    Tp* block;
+    std::vector<Tp*> state;
+    uint64_t count = 0;
+};
 
 int main()
 {
