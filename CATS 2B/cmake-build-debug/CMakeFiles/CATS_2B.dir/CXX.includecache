@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/karpe/Desktop/Home Work C++/C/CATS 2B/SmartPointer.hpp
+memory
+-
+Test.hpp
+C:/Users/karpe/Desktop/Home Work C++/C/CATS 2B/Test.hpp
+
+C:/Users/karpe/Desktop/Home Work C++/C/CATS 2B/Test.hpp
+iostream
+-
+string
+-
+cxxabi.h
+-
+memory
+-
+
+C:/Users/karpe/Desktop/Home Work C++/C/CATS 2B/Test_SmartPointer.hpp
+SmartPointer.hpp
+C:/Users/karpe/Desktop/Home Work C++/C/CATS 2B/SmartPointer.hpp
+cstdint
+-
+memory
+-
+chrono
+-
+random
+-
+list
+-
+
+C:/Users/karpe/Desktop/Home Work C++/C/CATS 2B/main.cpp
+SmartPointer.hpp
+C:/Users/karpe/Desktop/Home Work C++/C/CATS 2B/SmartPointer.hpp
+Test_SmartPointer.hpp
+C:/Users/karpe/Desktop/Home Work C++/C/CATS 2B/Test_SmartPointer.hpp
+
