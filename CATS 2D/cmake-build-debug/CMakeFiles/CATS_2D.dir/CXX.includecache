@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/karpe/Desktop/Home Work C++/C/CATS 2D/main.cpp
+iostream
+-
+cassert
+-
+string
+-
+memory
+-
+vector
+-
+fstream
+-
+
