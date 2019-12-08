@@ -1,0 +1,3 @@
+C:/Users/karpe/Desktop/Home Work C++/C/CATS 2E/cmake-build-debug/CMakeFiles/CATS_2E.dir
+C:/Users/karpe/Desktop/Home Work C++/C/CATS 2E/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/karpe/Desktop/Home Work C++/C/CATS 2E/cmake-build-debug/CMakeFiles/rebuild_cache.dir

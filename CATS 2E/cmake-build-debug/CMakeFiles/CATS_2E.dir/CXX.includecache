@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/karpe/Desktop/Home Work C++/C/CATS 2E/main.cpp
+cstdlib
+-
+iostream
+-
+vector
+-
+string
+-
+map
+-
+set
+-
+unordered_map
+-
+
