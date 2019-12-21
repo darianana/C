@@ -19,24 +19,22 @@ Iterator Find(const T& value, Iterator first, Iterator last){
     typedef typename std::iterator_traits<Iterator>::iterator_category category;
     if (std::is_same<category, std::random_access_iterator_tag>::value){
         const Iterator endIt = last;
-        while (distance(first, last) > 0){
+        while (distance(first, last) != 1){
             Iterator mid = first;
             std::advance(mid,(distance(first, last) / 2));
-            if (value < *mid){
-                last = mid;
-            }
-            else if(value == *mid){
-                return mid;
+            if (*mid < value){
+                first = mid;
             }
             else{
-                first = mid;
-                first++;
+                last = mid;
             }
         }
-//        if (*last == value){
-//            return last;
-//        }
-
+        if (*last == value){
+            return last;
+        }
+        else if(*first == value){
+            return first;
+        }
         return endIt;
     }
     else{
@@ -64,7 +62,6 @@ struct Test {
         ++cnt;
         return a < rhs.a;
     }
-
     bool operator==(const Test& rhs) const {
         ++cnt;
         return a == rhs.a;
@@ -100,7 +97,7 @@ int main() {
             tests.emplace_back(i * 3);
         }
         for (int i = 0; i < 1000; ++i) {
-            Test res(90);
+            Test res(i * 3);
             Test::Init();
             auto my_res = Find(res, tests.begin(), tests.end());
             assert(my_res != tests.end());
